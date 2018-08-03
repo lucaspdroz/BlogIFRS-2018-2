@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Arsenal');
+
+
+h1{
+	font-family: 'Roboto', sans-serif;
+}
+span{
+	
+	font-family: 'Arsenal', sans-serif;
+	font-weight: bolder;
+}
+
+footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #e0e0e0;
+  text-align: center;
+}
+
+b#brave{
+	color: Red;
+}
+
+.button {
+    background-color: #304FFE; /*304FFE*/
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #008CBA; 
+    color: white; 
+    border: 2px solid #008CBA;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
