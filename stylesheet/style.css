@@ -39,6 +39,14 @@ a{
   font-family: 'Noto Sans', sans-serif;
 }
 
+.bg{
+  margin: auto;
+  width: 100vw;
+  height: 31vh;
+  
+  background: url("../assets/IFRS.jpg") no-repeat center center fixed;
+  background-size: auto;
+}
 
 /* Modal */
 .modal-mask {
