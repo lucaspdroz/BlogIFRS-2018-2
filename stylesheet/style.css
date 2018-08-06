@@ -48,9 +48,9 @@ span{
   margin: auto;
   width: 100vw;
   height: 31vh;
-  
-  background: url("../assets/images/IFRS.jpg") no-repeat center center fixed;
-  background-size: auto;
+  position: static;
+  background: url("../assets/images/IFRS.jpg") no-repeat center center ;
+  background-size: 100%;
 }
 
 /* Modal */
