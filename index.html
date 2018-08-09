@@ -12,38 +12,39 @@
 
     <!-- Preload stuff -->
     <link rel="preload" href="stylesheet/style.css" as="style">
-    
+
     <!-- Loaded Stuff -->
     <link rel="stylesheet" href="stylesheet/style.css">
 </head>
 
 <body>
-    <div class="bg"></div>
+    <section class="bg">
+        <nav id="menu">
+            <!-- https://ifrs.edu.br/ -->
+            <div id="right">
+                <ul>
+                    <li>Home</li>
+                    <a href="#Assuntos"><li id="assunto">Assuntos</li></a>
+                    <li>Code</li>
+                </ul>
+            </div>
+            <div id="left">
+                <a href="#">
+                    <img class="ifrs" src="assets/images/IF-full.png">
+                </a>
+            </div>
+        </nav>
 
-    <nav id="menu">
-        <!-- https://ifrs.edu.br/ -->
-        <div id="right">
-            <ul>
-                <li>Home</li>
-                <li id="assunto">Assuntos</li>
-                <li>Code</li>
-            </ul>
+        <div id="intro">
+            <h2>Blog Desenvolvido
+                <br> para Assuntos de SPI</h2>
         </div>
-        <div id="left">
-            <a href="#">
-                <img class="ifrs" src="assets/images/IF-full.png">
-            </a>
-        </div>
+    </section>
 
-    </nav>
-    <div id="intro">
-        <h2>
-            Blog Desenvolvido
-            <br> para Assuntos de SPI
-        </h2>
-    </div>
 
-    <ul class="list">
+    <section id="Assuntos">
+        <h2 class="black">Assuntos</h2>
+        <ul class="list">
             <li>
                 <a href="pages/C.html">Básico de Programação (Base de C, Java, ES6 e Python)</a>
             </li>
@@ -60,6 +61,7 @@
                 <a href="pages/Projetos/project.html">Projetos Futuros</a>
             </li>
         </ul>
+    </section>
 </body>
 
 </html>
