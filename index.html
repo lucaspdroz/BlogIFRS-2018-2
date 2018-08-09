@@ -12,27 +12,54 @@
 
     <!-- Preload stuff -->
     <link rel="preload" href="stylesheet/style.css" as="style">
-    <link rel="preload" href="js/vue.min.js" as="script">
-    <link rel="preload" href="js/template.js" as="script">
-
+    
     <!-- Loaded Stuff -->
     <link rel="stylesheet" href="stylesheet/style.css">
 </head>
 
 <body>
     <div class="bg"></div>
+
+    <nav id="menu">
+        <!-- https://ifrs.edu.br/ -->
+        <div id="right">
+            <ul>
+                <li>Home</li>
+                <li>Assuntos</li>
+                <li>Code</li>
+            </ul>
+        </div>
+        <div id="left">
+            <a href="#">
+                <img class="ifrs" src="assets/images/IF-full.png">
+            </a>
+        </div>
+
+    </nav>
     <div id="intro">
-        <intro></intro>
+        <h2>
+            Blog Desenvolvido
+            <br> para Assuntos de SPI
+        </h2>
     </div>
 
-    <div id="example">
-        <my-component></my-component>
-    </div>
-
-    <!-- Import JS VueJS Framework -->
-    <script src="js/vue.min.js"></script>
-    <script src="js/template.js"></script>
-
+    <ul class="list">
+            <li>
+                <a href="pages/C.html">Básico de Programação (Base de C, Java, ES6 e Python)</a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <a href="assets/download.html">Arquivos para Download</a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <a href="pages/Projetos/project.html">Projetos Futuros</a>
+            </li>
+        </ul>
 </body>
 
 </html>

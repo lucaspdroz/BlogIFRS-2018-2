@@ -1,126 +1,65 @@
-
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
-
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Montserrat');
 /* Elements */
 
-*{
-  margin: 0;
-  padding: 0;
-  border: 0;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-body{
-  width: 100vw;
-  height:100vh;
-  font-family: 'Noto Sans', sans-serif;
+body {
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
-h2{
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 10px;
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #343434;
 }
 
-h3{
-  text-align: center;
-  color: rgb(123, 133, 141);
-  margin-bottom: 50px;
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-.list{
-  text-align: center;
+h3 {
+    text-align: center;
+    color: rgb(123, 133, 141);
+    margin-bottom: 50px;
 }
 
-a{
-  color: rgb(40, 157, 236);
-  text-decoration: none;
-  font-weight: 200;
-  font-size: 20px;
-  font-family: 'Noto Sans', sans-serif;
+a {
+    color: rgb(40, 157, 236);
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-span{
-  color: #E96BCC;
+span {
+    color: #E96BCC;
 }
 
-.bg{
-  margin: auto;
-  width: 100vw;
-  height: 31vh;
-  position: static;
-  background: url("../assets/images/IFRS.jpg") no-repeat center center ;
-  background-size: 100%;
+.bg {
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: url("../assets/images/IFRS.jpg") no-repeat;
+    background-size: 100%;
+    z-index: -1;
 }
 
-/* Modal */
-.modal-mask {
-    position: fixed;
-    z-index: 9998;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    display: table;
-    transition: opacity .3s ease;
-  }
-  
-  .modal-wrapper {
-    display: table-cell; 
-    vertical-align: middle;
-  }
-  
-  .modal-container {
-    width: 30vw;
-    min-width: 15vw;
-    margin: 0px auto;
-    height: 20vh;
-    padding: 20px 30px;
-    background-color: #fff;
-    border-radius: 0px 25px 0px 0px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
-    transition: all .3s ease;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  .modal-header h3 {
-    margin-top: 0;
-    color: #42b983;
-  }
-  
-  .modal-body {
-    margin: 20px 0;
-  }
-  
-  .modal-default-button {
-    float: right;
-  }
-  
-  /*
-   * The following styles are auto-applied to elements with
-   * transition="modal" when their visibility is toggled
-   * by Vue.js.
-   *
-   * You can easily play with the modal transition by editing
-   * these styles.
-   */
-  
-  .modal-enter {
-    opacity: 0;
-  }
-  
-  .modal-leave-to {
-    opacity: 0;
-  }
-  
-  .modal-enter .modal-container,
-  .modal-leave-to .modal-container {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+.list {
+    text-align: center;
+}
 
-  button{
+button {
     padding: 15px;
     width: 120px;
     font-family: 'Noto Sans', sans-serif;
@@ -131,7 +70,39 @@ span{
     border: 1px solid rgb(40, 157, 236);
 }
 
-.modal-default-button{
-  width: 100px;
-  margin-top: 4vh;
+/* MENUS */
+
+#menu {
+    top: 0px;
+}
+
+#menu ul li {
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+    display: inline-block;
+}
+
+.ifrs {
+    margin: 10px;
+    width: calc(243px);
+}
+
+#right {
+    margin: calc(21px);
+    position: absolute;
+    right: calc(45px);
+}
+
+/* Body */
+
+#intro {
+    font-size: 1.5em;
+    width: 100vw;
+}
+
+#intro h2 {
+    margin: 28vw;
+    text-align: center;
+    background: #32A041;
 }
