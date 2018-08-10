@@ -8,7 +8,7 @@ var birthday = "4/3/2017";
 var systemName = " Siege Automaton E54 ";
 
 function setup(){
-	createCanvas(800, 400);
+	createCanvas(windowWidth, windowHeight);
 	background(255, 255, 255);
 	fill(0, 0, 0, 255);
 	// instructions:
@@ -16,7 +16,7 @@ function setup(){
 	textAlign(CENTER);
 	isBirthday();
 	/*myVoice.speak("Olá, "+ name + " Em que posso ajudar?");*/
-	text("Diga Algo - Say Something ", width/2, height/2);
+	text("Olá Tudo bem?", width/2, height/2);
 	myRec.onResult = showResult;
 	myRec.start(); // start engine
 }
@@ -67,6 +67,12 @@ function isBirthday(){
 	}
 }
 
+/*make a refresh page*/
+function refreshPage(){
+	location.reload(true);
+}
+
+
 function parseResult(){
 	// recognition system will often append words into phrases.
 	// so hack here is to only use the last word:
@@ -94,22 +100,7 @@ function parseResult(){
 	else if(mostrecentword.indexOf("que horas são")!==-1 || mostrecentword.indexOf("Que horas são")!==-1 || mostrecentword.indexOf("horário")!==-1 || mostrecentword.indexOf("horas")!==-1 || mostrecentword.indexOf("Horas")!==-1 ) { myVoice.speak("Agora são exatamente" + updateClock()) + text(updateClock(), width/2, height/-1.5);  textSize(32);}
 	else if(mostrecentword.indexOf("Liga luz")!==-1 || mostrecentword.indexOf("Ligar luz")!==-1 ||  mostrecentword.indexOf("Ligar a luz")!==-1 || mostrecentword.indexOf("ligar a lâmpada")!==-1) { console.log("Liga"); }
 	else if(mostrecentword.indexOf("Desliga luz")!==-1 || mostrecentword.indexOf("desligar")!==-1 ||  mostrecentword.indexOf("desligar luz")!==-1 || mostrecentword.indexOf("desligar lâmpada")!==-1) { console.log("Desliga"); }
-	else if(mostrecentword.indexOf("Ler texto")!==-1 || mostrecentword.indexOf("ler texto")!==-1){
-
-	var Arr = ["Resumo Apresenta o contexto contemporâneo que embasa as atividades de profissionais da informação,"
-		,"tendo em vista mercados de trabalhos com crescentes níveis de exigência e a necessidade de se solucionarem problemas de informação cada vez mais complexos e dinâmicos. "
-		,"Define-se gestão da informação, assim como sua abrangência acadêmicooperacional tendo como base os pressupostos teóricos da área de ciência da informação, "
-		,"em especial o núcleo de conteúdos relacionados à gestão integral dos recursos de informação de indivíduos, grupos e organizações. "
-		,"Ressaltase que a gestão da informação compartilha com demais profissões afins, "
-		,"os processos de criação, seleção e avaliação, gerenciamento, divulgação, utilização, preservação e políticas de direitos (privacidade, direitosautorais e outros) relacionados ao trinômio dado, informação e conhecimento. "
-		,"São descritas habilidades e conhecimentos necessários ao desempenho profissional do gestor, "
-		,"assim como as dificuldades inerentes à atuação no campo de atividades de informação"];
-
-		for (var i = 0; i <= Arr.length; i++) {
-			/*myVoice.speak(Arr[i]);*/
-			console.log(Arr[i]);
-			myVoice.speak(Arr[i]);
-		}		
+	else if(mostrecentword.indexOf("Ler texto")!==-1 || mostrecentword.indexOf("ler texto")!==-1){	
 	}
 }
 
