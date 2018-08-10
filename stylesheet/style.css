@@ -108,16 +108,30 @@ button {
     background: #32A041;
 }
 
-#menu #assunto {
-    background: url(../assets/images/Vector.svg);
-    background-size: 19px 11px;
-    background-repeat: no-repeat;
-    background-position: 25px 22px;
-}
-.content{
+.content {
     padding-top: 6vw;
 }
 
 .black {
     color: black;
+}
+
+#assunto {
+    background: url(../assets/images/Vector.svg);
+    background-size: 19px 11px;
+    background-repeat: no-repeat;
+    background-position: 25px 22px;
+    /* animation: bouncing infinite 2.2s; */
+}
+
+@keyframes bouncing {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 20px;
+    }
+    100% {
+        margin-top: 0px;
+    }
 }
