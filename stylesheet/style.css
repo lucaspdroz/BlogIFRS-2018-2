@@ -114,6 +114,9 @@ button {
     background-repeat: no-repeat;
     background-position: 25px 22px;
 }
+.content{
+    padding-top: 6vw;
+}
 
 .black {
     color: black;

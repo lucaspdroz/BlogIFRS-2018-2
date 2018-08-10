@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>C</title>
+    <meta name="theme-color" content="#32A041">
     <link rel="icon" type="image/png" href="../assets/cat.png" />
     <link rel="stylesheet" href="../stylesheet/style.css">
     <style>
@@ -16,7 +17,6 @@
 </head>
 
 <body>
-
     <section>
         <h1>Entendendo a linguagem C de forma simples</h1>
         <ol>
@@ -30,38 +30,39 @@
                     </li>
                 </ul>
             </li>
+
+
+            <p> O Código usado para todos os exemplos a seguir será:</p>
+            <pre>
+            #include <stdio.h>
+    
+                int main(){
+                    printf("Hello, World!\n");
+                    return 0;
+                }
+            </pre>
+
+            <li>Compilando meu 1º código? O que é o GCC? Comando explicado </li>
+            GNU Compiler Collection ou Coleção de compilação do GNU é um conjundo de compiladores de linguagem de programação, ou seja
+            ele ira pegar o nosso código que é legivel por humanos e o tranformará em binário, linguagem de máquina. O comando
+            de uso do GCC é:
+            <br>
+            <b>
+                <pre>gcc nomeDoSeuArquivo.c -o arquivoFinal</pre>
+            </b>
+            <br> -o : refere-se ao output (Saída do programa)
+
+
+            <h4 id="windows">Windows</h4>
+            <p></p>
+
+
+            <h4 id="MU">Mac OS X & Unix (
+                <a href=""> Distros Linux </a>)</h4>
+        </ol>
     </section>
-    <section>
-        <p> O Código usado para todos os exemplos a seguir será:</p>
-        <pre>
-        #include <stdio.h>
 
-            int main(){
-                printf("Hello, World!\n");
-                return 0;
-            }
-        </pre>
 
-        <li>Compilando meu 1º código? O que é o GCC? Comando explicado </li>
-        GNU Compiler Collection ou Coleção de compilação do GNU é um conjundo de compiladores de linguagem de programação, ou seja
-        ele ira pegar o nosso código que é legivel por humanos e o tranformará em binário, linguagem de máquina. O comando
-        de uso do GCC é:
-        <br>
-        <b>
-            <pre>gcc nomeDoSeuArquivo.c -o arquivoFinal</pre>
-        </b>
-        <br> -o : refere-se ao output (Saída do programa)
-    </section>
-    <section>
-        <h4 id="windows">Windows</h4>
-
-        <p></p>
-
-    </section>
-
-    <h4 id="MU">Mac OS X & Unix (
-        <a href=""> Distros Linux </a>)</h4>
-    </ol>
 
 </body>
 
