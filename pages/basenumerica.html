@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="../assets/cat.png" />
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <style>
+        li{
+            margin: 10px;
+            list-style: none;
+        }
+    </style>
+    <title>Conversão</title>
 </head>
+
 <body>
-    <p>(1348)<sub>10</sub></p>
 
+    <div id="binario"></div><br>
+    <div id="base3"></div><br>
+    <div id="base8"></div><br>
+    <div id="hexa"></div><br>
 
-    (2102)<sub>3</sub> =
- (212121)3 =
- (222)3 =
- 10003 =
- 22223 =
- 100003 =
- 1000003 =
- 120358 =
- 27468 =
- 378 =
- 1168 =
- 25378 =
- 7778 =
- 10008 =
- 100008 =
- 1101012 =
- 111112 =
- 1010112 =
- 1111112 =
- 10000002 =
- 10000012 =
- 10000112 =
- A8D16 =
- AB5C16 =
- 2E16 =
- 2F16 =
- 3016 =
- 3116 =
- F2D16 =
- B3AC16 =
- FF16 =
- 10016 =
- FFF1 <sub> 6</sub> =
- 1000<sub>16</sub> = 
 </body>
+<script>
+
+    var bases =   ["2", "3", "8", "16"];
+    var binario = ["110101", "11111", "101011", "111111", "1000000", "1000001", "1000011"];
+    var base3 =   ["2102", "212121", "222", "1000", "2222", "10000", "100000"];
+    var base8 =   ["12035", "2746", "37", "116", "2537", "777", "1000", "10000"];
+    var hexa =    ["A8D", "AB5C", "2E", "2F", "30", "31", "F2D", "B3AC", "FF", "100", "FFF", "1000"];
+    
+    for (a in binario) {
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode("(" + binario[a] + ") " + bases[0]+ " = ");
+        node.appendChild(textnode);
+        document.getElementById("binario").appendChild(node);
+    }
+
+
+    for (a in base3) {
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode("(" + base3[a] + ") " + bases[1] + " = ");
+        node.appendChild(textnode);
+        document.getElementById("base3").appendChild(node);
+    }
+
+
+    for (a in base8) {
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode("(" + base8[a] + ") " + bases[2]+ " = ");
+        node.appendChild(textnode);
+        document.getElementById("base8").appendChild(node);
+    }
+
+    for (a in hexa) {
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode("(" + hexa[a] + ") " + bases[3]+ " = ");
+        node.appendChild(textnode);
+        document.getElementById("hexa").appendChild(node);
+    }
+
+    function verificaResposta(resposta){
+        if(resposta == True){
+
+        }else{
+
+        } 
+    }
+
+</script>
+
 </html>
