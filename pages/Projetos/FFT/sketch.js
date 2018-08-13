@@ -1,6 +1,6 @@
 function preload() {
     // Here you place the Sound archive to play
-    sound = loadSound('The_Model_-_1_The_Model_-_I_Am_Always_on_Your_Mind.mp3');
+    sound = loadSound('The_Model_-_1_The_Model_-_I_Am_Always_on_Your_Mind2.mp3');
 }
 
 function setup() {
