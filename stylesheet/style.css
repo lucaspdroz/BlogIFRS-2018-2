@@ -54,6 +54,11 @@ a {
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Noto Sans', sans-serif; */
 }
+/* Genericos */
+.center{
+    text-align: center;
+    margin: auto;
+}
 
 span {
     color: #E96BCC;
@@ -69,10 +74,6 @@ section {
     background: url("../assets/images/IFRS.jpg") no-repeat;
     background-size: 100%;
     z-index: -1;
-}
-
-.list {
-    text-align: center;
 }
 
 button {
@@ -93,9 +94,9 @@ button {
 }
 
 ul li {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 #menu ul li {
