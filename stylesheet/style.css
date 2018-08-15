@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Montserrat|Roboto');
 /* Elements */
 
-* {
+html,
+body {
     margin: 0;
     padding: 0;
     border: 0;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -149,18 +147,6 @@ ul li {
     /* animation: bouncing infinite 2.2s; */
 }
 
-@keyframes bouncing {
-    0% {
-        margin-top: 0px;
-    }
-    50% {
-        margin-top: 20px;
-    }
-    100% {
-        margin-top: 0px;
-    }
-}
-
 /* Text config  */
 
 .capitalize {
@@ -193,10 +179,24 @@ article {
     width: 70%;
 }
 
-
-.leitorQR{
+.leitorQR {
     /* Reset do SVG */
-    margin: -0.4%;
-    margin-left: 40vw;
+    /* margin: -0.4%; */
+    /* margin-left: 40vw; */
     padding: 0;
+}
+
+
+/* Animações */
+
+@keyframes bouncing {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 20px;
+    }
+    100% {
+        margin-top: 0px;
+    }
 }

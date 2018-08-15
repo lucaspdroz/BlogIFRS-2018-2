@@ -47,7 +47,7 @@ function updateClock() {
   if (m < 10) {
   	m = "0" + m; 
   }
-  return h + " : " + m;
+  return h + "horas : e " + m +"minutos";
 }
 
 function updateDate(){
