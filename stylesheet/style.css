@@ -9,7 +9,6 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -17,7 +16,7 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: 44px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #343434;
 }
 
@@ -26,6 +25,7 @@ h2 {
     color: aliceblue;
     font-size: 2em;
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
@@ -40,7 +40,7 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #2c3e50;
 }
 
@@ -51,11 +51,13 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     /* font-family: 'Noto Sans', sans-serif; */
 }
+
 /* Genericos */
-.center{
+
+.center {
     text-align: center;
     margin: auto;
 }
@@ -79,12 +81,32 @@ section {
 button {
     padding: 15px;
     width: 120px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 25px;
     border: none;
     background-color: rgb(40, 157, 236);
     color: aliceblue;
     border: 1px solid rgb(40, 157, 236);
+}
+
+.cadastros {
+    margin: 8vw 7vw;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9em;
+}
+
+input {
+    min-width: 500px;
+    max-width: 30vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+    border: none;
+    border-bottom: 1px solid #2c3e50;
+    display: block;
+    margin: 18px;
 }
 
 /* MENUS */
@@ -104,7 +126,7 @@ ul li {
     font-weight: bold;
     margin: 10px;
     height: 40px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: inline-block;
     z-index: 1;
 }
@@ -122,14 +144,27 @@ ul li {
 
 /* Body */
 
-#intro {
-    font-size: 1.5em;
+#intro h2 {
+    margin-top: 21vw;
+    font-size: 4.2em;
+    text-align: center;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4);
 }
 
-#intro h2 {
-    margin-top: 28vw;
+.cadastro {
+    width: 168px;
+    height: 31px;
+    background-color: #32a041;
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-    background: #32A041;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .content {
@@ -144,7 +179,7 @@ ul li {
     background: url(../assets/images/Vector.svg);
     background-size: 19px 11px;
     background-repeat: no-repeat;
-    background-position: 25px 22px;
+    background-position: 25px 25px;
     /* animation: bouncing infinite 2.2s; */
 }
 
@@ -187,7 +222,6 @@ article {
     padding: 0;
 }
 
-
 /* Animações */
 
 @keyframes bouncing {
@@ -201,6 +235,5 @@ article {
         margin-top: 0px;
     }
 }
-
 
 /* Mobile */

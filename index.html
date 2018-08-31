@@ -9,14 +9,8 @@
     <meta name="theme-color" content="#32A041">
     <title>IFRS Ninja 🐱‍👤</title>
     <link rel="icon" type="image/png" href="assets/cat.png" />
-
-    <!-- Preload stuff -->
-    <!-- <link rel="preload" href="stylesheet/style.css" as="style"> -->
-
-    <!-- Loaded Stuff -->
     <link rel="stylesheet" href="stylesheet/style.css">
 </head>
-
 <body>
     <section class="bg">
         <nav id="menu">
@@ -36,10 +30,12 @@
                 </a>
             </div>
         </nav>
-
         <div id="intro">
             <h2>Blog Desenvolvido
                 <br> para Assuntos de SPI</h2>
+            <div class="center">
+                <a href="#registro" class="cadastro">Começar Já</a>
+            </div>
         </div>
     </section>
     <section id="Assuntos">
@@ -58,6 +54,39 @@
             </ul>
         </div>
     </section>
+    <section class="cadastros">
+        <h2 id="registro">Registre-se</h2>
+        <div class="">
+            <form action="">
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Digite seu Email" min="3">
+                <label for="pass1">Senha:</label>
+                <input id="pass1" type="password" placeholder="Digite sua Senha">
+                <label for="pass2">Confirmar Senha:</label>
+                <input id="pass2" type="password" placeholder="Confirme sua Senha">
+                <a class="cadastro">Registre-se</a>
+            </form>
+        </div>
+    </section>
 </body>
+<script>
+    // var a = document.getElementById("pass1");
+    // var b = document.getElementById("pass2");
+
+    // b.window.addEventListener('click', function () {
+
+    // });
+
+    // if (a == null && b == null) {
+    //     console, console.log("Vaziu");
+    // } else {
+    //     if (a != b) {
+    //         console, console.log("Diferente");
+    //     } else {
+    //         console, console.log("Igual");
+    //     }
+    // }
+
+</script>
 
 </html>
