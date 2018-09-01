@@ -144,8 +144,9 @@ ul li {
 
 /* Body */
 
-#intro h2 {
-    margin-top: 21vw;
+#intro > h2 {
+    margin-top: 0vw;
+    padding-top: 24vw;
     font-size: 4.2em;
     text-align: center;
     text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4);
@@ -237,3 +238,26 @@ article {
 }
 
 /* Mobile */
+
+
+@media (max-width:700px){
+
+    .bg{
+        background-position: 0px 0vh; 
+    }
+
+    #intro > h2{
+        display: none;
+    }
+
+    .cadastro{
+        margin-top: 64vw;
+    }
+
+    #menu{
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+}
