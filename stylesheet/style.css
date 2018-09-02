@@ -243,7 +243,8 @@ article {
 @media (max-width:700px){
 
     .bg{
-        background-position: 0px 0vh; 
+        background-position: calc(-269px) 0vh;
+        background-size: 250vw; 
     }
 
     #intro > h2{
@@ -251,7 +252,7 @@ article {
     }
 
     .cadastro{
-        margin-top: 64vw;
+        margin-top: 118vw;
     }
 
     #menu{
