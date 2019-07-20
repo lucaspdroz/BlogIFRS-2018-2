@@ -15,10 +15,10 @@ function setup() {
 function draw() {
     background(8);
     stroke(0);
-    rotateX(2.9);
+    rotateX(3);
     texture(img);
-    rotateY(frameCount * -0.01);
-    translate(0, -(width / 2), 0);
+    rotateY(frameCount * -0.005);
+    translate(-10, -(height / 2), 0);
     model(obj3D);
 }
 
