@@ -98,7 +98,8 @@ label {
     font-size: 1.9em;
 }
 
-input {
+input[type="email"],
+input[type="password"] {
     min-width: 342px;
     max-width: 30vw;
     font-family: 'Montserrat', sans-serif;
